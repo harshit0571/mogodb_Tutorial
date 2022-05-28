@@ -7,5 +7,5 @@ mongoose.connect(process.env.link, { useNewUrlParser: true, useUnifiedTopology: 
 }).catch((err) => console.log(err));
 
 
-const new_user = new user({ username: "harshit", password: "5545454511" })
+const new_user = new user({ username: "harsh", password: "5545454511" })
 new_user.save().then(() => console.log(new_user))
