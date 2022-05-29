@@ -22,9 +22,21 @@ mongoose.connect(process.env.link, { useNewUrlParser: true, useUnifiedTopology: 
 // }
 // run();
 
+// async function run() {
+//     try {
+//         const find = await user.find({ username: "harshit" });
+//         console.log(find);
+//     }
+//     catch (e) {
+//         console.log(e)
+//     }
+
+// }
+// run();
+
 async function run() {
     try {
-        const find = await user.find({ username: "harshit" });
+        const find = await user.deleteOne({ username: "harshit" });
         console.log(find);
     }
     catch (e) {
